@@ -1,0 +1,592 @@
+.hero {
+	background-image: url('../assets/images/hero.jpg');
+	background-repeat: no-repeat;
+	background-position-x: 10%;
+	background-size: 100%;
+	height: 115vh;
+	position: relative;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+.heading-content {
+	padding: 0 2rem;
+	width: 45%;
+	/* position: absolute; */
+	/* top: 40%;
+	right: 0%;
+	transform: translate(-30%, -50%); */
+}
+.heading-text {
+	font-size: 4rem;
+	line-height: 0.9;
+	font-weight: var(--header-text);
+	width: 100%;
+}
+.heading-span {
+	color: #377dff;
+}
+.heading-paragraph {
+	font-weight: var(--button-text);
+	margin-bottom: 1rem;
+}
+.heading-btn {
+	color: var(--background-color);
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+	border: none;
+	background-color: var(--dark-color1);
+	cursor: pointer;
+	font-weight: var(--header-text);
+	text-decoration: none;
+	transition: all 0.3s ease-in;
+}
+
+.heading-content a:hover {
+	color: var(--dark-color1);
+	background-color: var(--background-color);
+}
+
+.logos {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 4rem 5rem 2rem 5rem;
+}
+
+.new {
+	display: flex;
+	flex-direction: column;
+	padding: 4rem 5rem 2rem 5rem;
+}
+.heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.heading h2 {
+	font-size: 2rem;
+	padding-left: 1.2rem;
+}
+.nav-dots {
+	display: flex;
+}
+.productsContainer {
+	display: flex;
+	flex-direction: row;
+	overflow-x: hidden;
+	width: 700vw;
+	padding-right: 0;
+	transition: transform 0.3s ease;
+}
+.products {
+	flex-direction: column;
+	overflow-x: hidden;
+	width: 20rem;
+	height: 25rem;
+	padding: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	background-color: var(--light-color2);
+}
+.imgGroup {
+	position: relative;
+	height: 60%;
+	/* display: inline-block; */
+}
+.productImg {
+	height: 90%;
+	aspect-ratio: 3/2;
+	background-position: center;
+	transition: all 0.3s ease-in;
+}
+.productImg:hover {
+	transform: scale(0.95);
+}
+.imgGroup:hover .productRating {
+	opacity: 1;
+}
+.productBtn {
+	color: var(--background-color);
+	padding: 0.6rem 1rem;
+	border: none;
+	background-color: #1c181d;
+	border: 1.5px solid #656266;
+	border-radius: 0.3rem;
+	font-weight: var(--header-text);
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+	margin: 0.5rem 0;
+}
+.productBtn:hover {
+	border-bottom: 4px solid #322f33;
+}
+.productBtn:active {
+	border-top: 4px solid #322f33;
+}
+.productName,
+.productPrice {
+	font-weight: var(--button-text);
+	margin: 0;
+	padding: 0;
+}
+.productRating {
+	position: absolute;
+	top: 75%;
+	left: 5%;
+	/* transform: translate(-50%, -50%); */
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.shopCollection {
+	padding: 4rem 5rem 2rem 5rem;
+}
+.shopCollection h3 {
+	padding: 1rem 0;
+	font-weight: var(--header-text);
+	font-size: 1.5rem;
+}
+.imgContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 20rem);
+	grid-gap: 1rem;
+}
+.headphone {
+	height: min-content;
+	grid-column: 1/2;
+	grid-row: 1/1;
+}
+.earbud {
+	height: 100%;
+	width: 100%;
+	grid-column: 2/2;
+	grid-row: 1/1;
+}
+
+figcaption {
+	transition: all 0.3s ease-in;
+}
+figcaption:hover {
+	transform: scale(0.95);
+}
+.imgContainer h4 {
+	margin-top: -6rem;
+	margin-left: 2rem;
+	font-size: 1.2rem;
+	font-weight: var(--header-text);
+}
+.imgContainer .link {
+	display: flex;
+	color: var(--dark-color1);
+	align-items: center;
+	padding-bottom: 0.5rem;
+	margin-left: 2rem;
+	text-decoration: underline;
+	font-weight: var(--button-text);
+}
+
+.bestSeller {
+	padding: -1rem 5rem 4rem 5rem;
+}
+.bestSeller h3 {
+	font-size: 1.5rem;
+	font-weight: var(--header-text);
+	padding: 0 0 0 5rem;
+}
+.bestSeller .bestcontainer {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(250px, 1fr));
+	grid-template-rows: repeat(2, minmax(250px, 1fr));
+	padding: 0 5rem;
+	grid-gap: 1rem;
+}
+
+.promotion {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	padding: 2rem 0;
+}
+.promo {
+	padding: 2rem 2rem;
+	background-image: linear-gradient(to right, #ffc655, #ffca60, #ffcb65);
+	height: 26.5rem;
+	width: 100%;
+}
+.promo h4 {
+	color: #377dff;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: var(--header-text);
+}
+.promo h2 {
+	color: var(--dark-color1);
+	font-size: 1.5rem;
+}
+.promo p {
+	font-weight: var(--button-text);
+}
+
+.features {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 2rem 1rem;
+}
+.featureCard {
+	background-color: var(--light-color2);
+	padding: 2rem;
+	text-align: left;
+	width: 18rem;
+}
+.featureImg {
+	width: 25%;
+}
+.featureCard h4 {
+	font-size: 1.5rem;
+}
+.featureCard p {
+	color: var(--light-color3);
+	font-size: 1rem;
+}
+
+.newsfeed {
+	padding-top: 2rem;
+	text-align: center;
+}
+.newsfeed h4 {
+	color: var(--light-color3);
+	text-transform: uppercase;
+	font-size: 1rem;
+	padding: 0.5rem 0;
+}
+.newsfeed h3 {
+	color: var(--dark-color1);
+	font-size: 2rem;
+	font-weight: var(--header-text);
+}
+.newsfeed p {
+	padding: 0.5rem 0;
+}
+.photos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2rem 2rem 2rem;
+}
+.photo {
+	width: 23%;
+}
+.newsletter {
+	padding: 0;
+	background-color: rgb(236, 235, 235);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+.headphone {
+	width: 30%;
+}
+.input {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.email {
+	display: flex;
+	align-items: center;
+	width: 120%;
+	border-bottom: 1px solid rgb(189, 188, 188);
+	margin-left: -2rem;
+}
+.email button {
+	border: 0;
+	background: transparent;
+	padding: 0;
+}
+.email input {
+	border: 0;
+	background-color: transparent;
+	color: var(--light-color3);
+	margin: 0 2rem 0 0.5rem;
+	width: 70%;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	font-size: 1.2rem;
+}
+input[email]:focus {
+	border: 0;
+}
+footer {
+	background-color: var(--dark-color1);
+	color: var(--light-color2);
+	padding: 4rem 2rem 2rem 2rem;
+}
+footer .headerLogo {
+	color: var(--background-color);
+}
+footer .footerNav {
+	color: var(--light-color2);
+}
+footer nav a {
+	color: var(--light-color2);
+}
+.first,
+.second {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer .info {
+	width: 30rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.copyright img {
+	color: white;
+}
+.socials {
+	padding-right: 2.5rem;
+}
+@media screen and (max-width: 470px) {
+	body {
+		overflow-x: hidden;
+	}
+	.hero {
+		height: 30vh;
+		width: 100vw;
+	}
+	.heading-content {
+		width: 60%;
+	}
+	.heading-text {
+		font-size: 1.8rem;
+	}
+	.heading-paragraph {
+		line-height: 1;
+	}
+	.heading-btn {
+		padding: 0.2rem 0.5rem;
+		font-weight: var(--button-text);
+	}
+	.logos {
+		padding: 1rem 0;
+		flex-wrap: wrap;
+	}
+	.logos img {
+		padding: 0.3rem;
+		width: 25%;
+	}
+	.new {
+		padding: 1rem;
+	}
+	.imgGroup {
+		height: 40%;
+		margin: 0;
+		padding: 0;
+	}
+	.products {
+		padding: 0.5rem;
+		width: 11rem;
+		height: 16rem;
+	}
+	.productImg {
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 0;
+	}
+	.productRating {
+		display: none;
+	}
+	.productBtn {
+		padding: 0.3rem 0.5rem;
+	}
+	.productName {
+		line-height: 1.1;
+	}
+	.productPrice {
+		font-weight: var(--header-text);
+		padding-top: 0.5rem;
+	}
+	.shopCollection {
+		padding: 1rem 1.5rem;
+	}
+	.imgContainer {
+		display: flex;
+		flex-direction: column;
+	}
+	.headphone {
+		margin-bottom: 3rem;
+	}
+	.headphone .imgHeadphone {
+		width: 420px;
+	}
+	.imgEarbud {
+		width: 420px;
+	}
+	.bestSeller {
+		padding: 2rem 0.5rem;
+	}
+	.bestSeller h3 {
+		padding: 0 1rem;
+	}
+	.bestSeller .bestcontainer {
+		padding: 0.5rem 1rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 1rem;
+	}
+	.content {
+		height: 20rem;
+		width: 12rem;
+		line-height: 1.2;
+		padding: 0.5rem;
+	}
+	.content .productImg {
+		width: 100%;
+	}
+	.content .productBtn {
+		width: 80%;
+		padding: 0.4rem 0.5rem;
+	}
+	.content .best-productRating {
+		margin: 0;
+		padding: 0;
+	}
+	.content .best-productName {
+		margin-bottom: 1rem;
+		padding: 0;
+	}
+	.content .best-productPrice {
+		padding: 0;
+		margin: 0;
+		font-weight: var(--header-text);
+	}
+	.three {
+		grid-column: 1/1;
+		grid-row: 2/2;
+	}
+	.four {
+		grid-column: 2/2;
+		grid-row: 2/2;
+	}
+	.five {
+		grid-column: 1/1;
+		grid-row: 3/3;
+	}
+	.sixs {
+		grid-column: 2/2;
+		grid-row: 3/3;
+	}
+	.promotion {
+		flex-direction: column;
+		padding: 1rem 0;
+	}
+	.promo {
+		padding: 1rem;
+		height: 18rem;
+	}
+	.features {
+		flex-wrap: wrap;
+		padding: 1rem 1.5rem;
+	}
+	.featureCard {
+		padding: 1rem;
+		width: 10rem;
+		margin-bottom: 1rem;
+	}
+	.featureCard h4 {
+		line-height: 1.2;
+		font-size: 1.2rem;
+	}
+	.featureCard p {
+		line-height: 1.1;
+	}
+	.newsfeed {
+		line-height: 1.3;
+	}
+	.newsfeed p {
+		font-weight: var(--button-text);
+		color: var(--light-color3);
+	}
+	.newsletter {
+		padding: 0.5rem 0.5rem;
+	}
+	.newsletter .headphone {
+		display: none;
+	}
+	.newsletter .email {
+		justify-content: center;
+		border-bottom: 0;
+		/* width: 80%; */
+	}
+	.newsletter .email button {
+		background-color: #322f33;
+		padding: 0.3rem 0.5rem;
+		color: var(--background-color);
+	}
+	.newsletter .email input {
+		width: 50%;
+	}
+	footer {
+		padding: 1rem;
+	}
+	footer nav {
+		flex-direction: column;
+	}
+	footer .info {
+		flex-direction: column;
+	}
+	footer .socials {
+		padding: 0;
+	}
+	@media screen and (max-width: 420px) {
+		.hero {
+			height: 25vh;
+		}
+		.heading-content {
+			width: 60%;
+		}
+		.heading-text {
+			font-size: 1.2rem;
+		}
+		.heading-paragraph {
+			line-height: 1;
+		}
+		.heading-btn {
+			font-size: 0.8rem;
+			padding: 0.1rem 0.3rem;
+			font-weight: var(--button-text);
+		}
+		.shopCollection {
+			padding: 1rem 1rem;
+		}
+		.headphone .imgHeadphone {
+			width: 370px;
+		}
+		.imgEarbud {
+			width: 370px;
+		}
+		.content {
+			height: 20rem;
+			width: 10rem;
+			line-height: 1.2;
+			padding: 0.5rem;
+		}
+	}
+	@media screen and (max-width: 375px) {
+		.headphone .imgHeadphone {
+			width: 340px;
+		}
+		.imgEarbud {
+			width: 340px;
+		}
+	}
+}
