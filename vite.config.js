@@ -23,6 +23,9 @@ export default defineConfig({
 			}
 		}
 	},
+module.exports = {
+  publicPath: process.env.NODE_ENV === "production" ? "/Vue-Headset-Ecommerce/" : "/",
+};
 
 	define: {
 		// Pass environment variables to the app
